@@ -1,4 +1,7 @@
-﻿int x = new Random().Next(1,11); // 1 2 3 4 .. 10
-Console.WriteLine (x);
-int result = x*x;
-Console.WriteLine (result);
+﻿Console.Write ("введите целое число");
+int value = Convert.ToInt32 (Console.ReadLine());// пытается записать тип string в int, поэтому беда, конвертируем в int
+
+int squareNumber = value * value;
+
+Console.WriteLine("квадрат данного числа равен ");
+Console.WriteLine (squareNumber);
