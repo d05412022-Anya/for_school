@@ -14,7 +14,7 @@ int squareNumber = value * value;
 
 Console.WriteLine("квадрат данного числа равен ");
 Console.WriteLine (squareNumber);
-*/
+
 
 // программа должна принять 2 числа и проверить, является ли первое число квадратом второго
 
@@ -31,4 +31,63 @@ if(Convert.ToBoolean(number1 == number2 * number2))
 else
 {
     Console.Write ("это просто числа, отстань");
+}
+
+
+// Напишите программу, которая будет выдавать название дня недели по заданному номеру
+
+Console.Write("Какой этот день по счёту? ");
+int day = Convert.ToInt32(Console.ReadLine());
+if(day == 1) 
+    {
+      Console.Write("это понедельничек");
+    }
+
+    if(day == 2) 
+    {
+        Console.Write("вторничек");
+    }
+
+    if(day == 3) 
+    {
+      Console.Write("среда");
+    }
+
+    if(day == 4) 
+    {  
+        Console.Write("рыбный день");
+    }
+
+    if(day == 5) 
+    {
+        Console.Write("пятница");
+    }
+
+    if(day == 6) 
+    {
+        Console.Write("субботка");
+    }
+
+    if(day == 7) 
+    {
+        Console.Write("воскресенье");
+    }
+
+    else
+    {   
+    Console.Write("твой личный день");
+    }
+*/
+
+//Напишите программу, которая на вход принимает одно число (N), а 
+//на выходе показывает все натуральные целые числа в промежутке от -N до N
+
+
+Console.Write ("Введите натуральное число: ");
+int n = Convert.ToInt32(Console.ReadLine());
+int negN = n*(-1);
+while(negN <= n)
+{
+    Console.WriteLine(negN);
+    negN++;
 }
