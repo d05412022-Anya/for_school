@@ -34,6 +34,7 @@ else
 }
 
 
+
 // Напишите программу, которая будет выдавать название дня недели по заданному номеру
 
 Console.Write("Какой этот день по счёту? ");
@@ -77,7 +78,40 @@ if(day == 1)
     {   
     Console.Write("твой личный день");
     }
-*/
+
+
+Console.Write("введите номер дня недели ");
+int number = Convert.ToInt32(Console.ReadLine());
+
+switch (number)
+    {
+        case 1:
+        {
+            Console.WriteLine("понедельник");
+            break;
+        }
+        case 2:
+        {
+            Console.WriteLine("вторник");
+            break;
+        }
+        default:
+        {
+            Console.WriteLine("неа");
+        }
+        
+
+    }
+
+
+
+
+
+
+
+
+
+
 
 //Напишите программу, которая на вход принимает одно число (N), а 
 //на выходе показывает все натуральные целые числа в промежутке от -N до N
@@ -89,5 +123,8 @@ int negN = n*(-1);
 while(negN <= n)
 {
     Console.WriteLine(negN);
-    negN++;
+    negN++;    //negN+=3 - увеличение на 3
 }
+*/
+
+
