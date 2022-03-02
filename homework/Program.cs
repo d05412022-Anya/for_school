@@ -32,7 +32,7 @@ if(number1 > number2)
 // 2, 3, 7 -> 7
 // 44 5 78 -> 78
 // 22 3 9 -> 22
-
+/*
 Console.WriteLine("введите первое число ");
 int number1 = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("введите второе число ");
@@ -57,9 +57,9 @@ int max = number1;
         {
             Console.WriteLine("что-то из этого равно");
         }
+    */
+
     
-
-
 
 //Задача 3: Напишите программу, которая на вход принимает число 
 //и выдаёт, является ли число чётным (делится ли оно на два без остатка).
@@ -67,7 +67,34 @@ int max = number1;
 //-3 -> нет
 //7 -> нет
 
+/*
+Console.WriteLine("введите число");
+int number = Convert.ToInt32(Console.ReadLine());
+if(number % 2 == 0)
+{
+    Console.WriteLine($"число {number} чётное");
+}
+else
+{
+    Console.WriteLine($"число {number} нечётное");
+}
+*/
+
+
 //Задача 4: Напишите программу, которая на вход принимает число (N),
 // а на выходе показывает все чётные числа от 1 до N.
 //5 -> 2, 4
 //8 -> 2, 4, 6, 8
+
+Console.WriteLine("введите число");
+int number = Convert.ToInt32(Console.ReadLine());
+int number0 = 2;
+while(number > number0 && number0 % 2 == 0)
+{
+    Console.WriteLine(number0);
+    number0+=2;
+}
+if(number <= 0)
+{
+    Console.WriteLine("неподходящее число");
+}
