@@ -32,7 +32,7 @@ if(number1 > number2)
 // 2, 3, 7 -> 7
 // 44 5 78 -> 78
 // 22 3 9 -> 22
-/*
+
 Console.WriteLine("введите первое число ");
 int number1 = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("введите второе число ");
@@ -53,11 +53,15 @@ int max = number1;
         {
             Console.WriteLine($"число {number3} самое большое");
         }
+//
+//перечитала условие и поняла, что это лишний шаг,
+// но искала специально обозначение дизъюнкции, жалко удалять
+//
     if(number1 == number2 | number2 == number3 | number1 == number3)
         {
             Console.WriteLine("что-то из этого равно");
         }
-    */
+    
 
     
 
@@ -86,6 +90,7 @@ else
 //5 -> 2, 4
 //8 -> 2, 4, 6, 8
 
+/*
 Console.WriteLine("введите число");
 int number = Convert.ToInt32(Console.ReadLine());
 int number0 = 2;
@@ -98,3 +103,4 @@ if(number <= 0)
 {
     Console.WriteLine("неподходящее число");
 }
+*/
