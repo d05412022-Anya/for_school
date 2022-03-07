@@ -22,7 +22,7 @@ ShowSecond(num);
 6 -> да
 7 -> да
 1 -> нет
-*/
+
 
 void Days(int day){
 if(day < 6 && day < 8){
@@ -38,7 +38,7 @@ if(day < 6 && day < 8){
 Console.Write("What day is it?");
 int day = Convert.ToInt32(Console.ReadLine());
 Days(day);
-
+*/
 
 
 
@@ -51,38 +51,32 @@ Days(day);
 
 32679 -> 6*/
 
+    
+void thirdOne(int num){
 
-/*void thirdOne(int num){
-    if(num < 100){
-        Console.WriteLine("there is no third digit");
-    }
+    if(100 <= num && num <= 999){
+            int part = num / 10;
+            int help = part * 10 - num;
+            int third = help * -1;
+            Console.WriteLine(third);
+    }    
     if(num > 999){
         while(num > 999){
-        int help = num % 10;
-        num = help;
-        help +=10;
-        }
+        int helpNum = num / 10;
+        num = helpNum;
+        helpNum +=1;
+    }
         int part1 = num / 10;
         int help1 = part1 * 10 - num;
         int third = help1 * -1;
         Console.WriteLine(third);
-        
     }
-    
-    if(100 <= num && num <= 999){
-    int part = num / 10;
-    int help = part * 10 - num;
-    int third = help * -1;
-    Console.WriteLine(third);
+    if(num < 100){
+        Console.WriteLine("there is no third digit");
     }
-
 }
-
 Console.WriteLine("enter number");
 int num = Convert.ToInt32(Console.ReadLine());
 thirdOne(num);
-
-
-
 
 
