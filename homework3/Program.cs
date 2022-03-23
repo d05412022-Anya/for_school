@@ -14,7 +14,7 @@
 
 
 //21: Напишите программу, которая принимает на вход координаты двух точек и находит расстояние между ними в 3D пространстве
-
+/*
 double getDistance3D(double x1, double y1, double x2, double y2, double z1, double z2)
 {
     double xDistance = x2 - x1;
@@ -39,7 +39,7 @@ zB = Convert.ToDouble(Console.ReadLine());
 
 Console.WriteLine(getDistance3D(xA, yA, xB, yB, zA, zB));
 
-/*
+
 //23:  Напишите программу, которая принимает на вход число (N) и выдаёт таблицу кубов чисел от 1 до N
 
 double getCubes(double num){
@@ -59,20 +59,3 @@ Console.WriteLine("enter your number ");
 int number = Convert.ToInt32(Console.ReadLine());
 getCubes(number);
 */
-
-//19: Напишите программу, которая принимает на вход пятизначное число и проверяет, является ли оно палиндромом.
-/*
-int number;
-int mirrorNumber = 0;
-void mirror(int num5dg){
-    int num;
-    while(num > 0){
-
-    }
-}
-
-
-
- Console.WriteLine("enter 5digit number ");
- int number = Convert.ToInt32(Console.ReadLine());
- */
